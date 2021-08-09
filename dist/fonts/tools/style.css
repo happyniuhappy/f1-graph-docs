@@ -1,0 +1,192 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?7kwhct');
+  src:  url('fonts/icomoon.eot?7kwhct#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?7kwhct') format('truetype'),
+    url('fonts/icomoon.woff?7kwhct') format('woff'),
+    url('fonts/icomoon.svg?7kwhct#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-gis-zoomout-box:before {
+  content: "\e900";
+}
+.icon-gis-zoomin-box:before {
+  content: "\e901";
+}
+.icon-gis-undo:before {
+  content: "\e902";
+}
+.icon-gis-topology-analysis:before {
+  content: "\e903";
+}
+.icon-gis-symbol-visible:before {
+  content: "\e904";
+}
+.icon-gis-symbol-replace:before {
+  content: "\e905";
+}
+.icon-gis-start-edit:before {
+  content: "\e906";
+}
+.icon-gis-stop-edit:before {
+  content: "\e907";
+}
+.icon-gis-save-edit:before {
+  content: "\e908";
+}
+.icon-gis-select-box:before {
+  content: "\e909";
+}
+.icon-gis-snap:before {
+  content: "\e90a";
+}
+.icon-gis-split:before {
+  content: "\e90b";
+}
+.icon-gis-redo:before {
+  content: "\e90c";
+}
+.icon-gis-rotate:before {
+  content: "\e90d";
+}
+.icon-gis-pan:before {
+  content: "\e90e";
+}
+.icon-gis-paste:before {
+  content: "\e90f";
+}
+.icon-gis-query-polygon:before {
+  content: "\e910";
+}
+.icon-gis-query-rectangle:before {
+  content: "\e911";
+}
+.icon-gis-query-spatial:before {
+  content: "\e912";
+}
+.icon-gis-open-toolbox:before {
+  content: "\e913";
+}
+.icon-gis-modify:before {
+  content: "\e914";
+}
+.icon-gis-move:before {
+  content: "\e915";
+}
+.icon-gis-measure-area:before {
+  content: "\e916";
+}
+.icon-gis-measure-line:before {
+  content: "\e917";
+}
+.icon-gis-location-id:before {
+  content: "\e918";
+}
+.icon-gis-location-name:before {
+  content: "\e919";
+}
+.icon-gis-location-xy:before {
+  content: "\e91a";
+}
+.icon-gis-layer-create:before {
+  content: "\e91b";
+}
+.icon-gis-layer-manage:before {
+  content: "\e91c";
+}
+.icon-gis-layer-open:before {
+  content: "\e91d";
+}
+.icon-gis-layer-option:before {
+  content: "\e91e";
+}
+.icon-gis-layer-remove:before {
+  content: "\e91f";
+}
+.icon-gis-align-h:before {
+  content: "\e920";
+}
+.icon-gis-align-v:before {
+  content: "\e921";
+}
+.icon-gis-attribute:before {
+  content: "\e922";
+}
+.icon-gis-buffer:before {
+  content: "\e923";
+}
+.icon-gis-buffer-line:before {
+  content: "\e924";
+}
+.icon-gis-buffer-point:before {
+  content: "\e925";
+}
+.icon-gis-buffer-polygon:before {
+  content: "\e926";
+}
+.icon-gis-check-allconnect:before {
+  content: "\e927";
+}
+.icon-gis-check-pointconnect:before {
+  content: "\e928";
+}
+.icon-gis-check-sideconnect:before {
+  content: "\e929";
+}
+.icon-gis-check-topo:before {
+  content: "\e92a";
+}
+.icon-gis-copy:before {
+  content: "\e92b";
+}
+.icon-gis-cut:before {
+  content: "\e92c";
+}
+.icon-gis-drawline:before {
+  content: "\e92d";
+}
+.icon-gis-drawpoint:before {
+  content: "\e92e";
+}
+.icon-gis-export-cad:before {
+  content: "\e92f";
+}
+.icon-gis-export-cim:before {
+  content: "\e930";
+}
+.icon-gis-export-svg:before {
+  content: "\e931";
+}
+.icon-gis-import-cad:before {
+  content: "\e932";
+}
+.icon-gis-import-cim:before {
+  content: "\e933";
+}
+.icon-gis-import-export:before {
+  content: "\e934";
+}
+.icon-gis-import-svg:before {
+  content: "\e935";
+}
+.icon-gis-import-xy:before {
+  content: "\e936";
+}

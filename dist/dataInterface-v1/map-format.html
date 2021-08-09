@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>WebGIS地图 | F1 Graph V4.X</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    
+    <meta name="description" content="F1图形文档">
+    
+    <link rel="preload" href="/f1-graph-docs/assets/css/0.styles.c0143d0e.css" as="style"><link rel="preload" href="/f1-graph-docs/assets/js/app.4c3d0c5e.js" as="script"><link rel="preload" href="/f1-graph-docs/assets/js/4.0d7b8c46.js" as="script"><link rel="preload" href="/f1-graph-docs/assets/js/38.8f6baf97.js" as="script"><link rel="prefetch" href="/f1-graph-docs/assets/js/10.918d7d1b.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/100.2bc9c27f.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/101.6a92cdd8.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/102.628a3aca.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/103.7e4270e2.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/104.58bd7cb1.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/105.7be110f8.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/106.35d4d116.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/107.11e0b863.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/108.28390203.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/109.5783cdac.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/11.b5d27c72.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/110.c1624b36.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/111.b0b06efd.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/112.989115f5.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/113.821e9c3a.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/114.a021dbfb.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/115.368dfb76.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/116.1d1df363.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/117.17147eb4.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/118.58148138.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/119.d9c94945.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/12.336307f1.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/120.effe4914.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/121.9fed4fff.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/122.a6fd017f.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/123.b70af789.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/124.0978f01f.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/125.73a13b27.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/126.8febf12b.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/127.c89c85bd.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/128.697ab90a.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/129.67ce0b59.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/13.419dc68b.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/130.bc7d4721.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/131.a7d62c2f.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/132.1dd82d9f.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/133.cf0cd5eb.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/14.0c17947d.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/15.d02f4061.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/16.1df22c73.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/17.ec27cd19.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/18.78757e79.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/19.d47ee93f.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/2.ee2e4685.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/20.b24e878c.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/21.eb1fcbd3.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/22.f41a7837.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/23.f7a31168.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/24.d4ca6407.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/25.f3c0d0de.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/26.c39fb7af.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/27.b82a21ef.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/28.9488f098.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/29.87510528.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/3.1f9f3d27.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/30.27865392.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/31.9972df13.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/32.52dc8842.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/33.4da6319d.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/34.b22ee62c.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/35.cc6ee50e.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/36.1db10d11.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/37.e747cb63.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/39.915e9621.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/40.a9e16a30.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/41.e8678f4c.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/42.cf1d16c2.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/43.062d4601.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/44.265ff5ae.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/45.4082f66c.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/46.6cdb59ef.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/47.e8562383.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/48.1518b837.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/49.b61eec5b.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/5.f9a48dc8.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/50.0a02afa4.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/51.7bfed49b.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/52.2c839866.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/53.ce14a628.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/54.bce0d603.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/55.df728572.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/56.39b3128d.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/57.37a96a91.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/58.d2abeab5.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/59.62de9eaf.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/6.a2ef9d93.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/60.48e290c2.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/61.50ebccb7.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/62.e8f5ecd2.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/63.c47c2266.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/64.fab10d44.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/65.9d8caa1e.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/66.d23fc9b3.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/67.a10384c5.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/68.9350e475.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/69.c7772bd1.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/7.68a65869.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/70.c2257d5b.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/71.2cddf34b.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/72.3a48055d.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/73.98009b00.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/74.04a446a0.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/75.905bc0a0.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/76.ccefe0d3.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/77.eddd9173.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/78.3a115420.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/79.a2b8e012.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/8.b9c07956.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/80.195b03cb.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/81.e3b04cad.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/82.41401737.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/83.a0997445.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/84.0ba9c5e6.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/85.e3c5013a.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/86.d545f3f8.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/87.ba1941fa.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/88.7c04bcb1.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/89.4648cf0d.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/9.3097b354.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/90.a0306f9b.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/91.b8e1ce89.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/92.72b9c4e9.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/93.d64ae05a.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/94.ea0737c5.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/95.6b619b94.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/96.592197b5.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/97.51a33268.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/98.5c0f5394.js"><link rel="prefetch" href="/f1-graph-docs/assets/js/99.b6c3104e.js">
+    <link rel="stylesheet" href="/f1-graph-docs/assets/css/0.styles.c0143d0e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/f1-graph-docs/" class="home-link router-link-active"><!----> <span class="site-name">F1 Graph V4.X</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/f1-graph-docs/guide/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><a href="/f1-graph-docs/dataInterface-v1/" class="nav-link router-link-active">
+  数据接口
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="组态图" class="dropdown-title"><span class="title">组态图</span> <span class="arrow down"></span></button> <button type="button" aria-label="组态图" class="mobile-dropdown-title"><span class="title">组态图</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/f1-graph-docs/components/joint/manual/" class="nav-link">
+  操作手册
+</a></li><li class="dropdown-item"><!----> <a href="/f1-graph-docs/components/joint/dev/" class="nav-link">
+  组件使用
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="地图" class="dropdown-title"><span class="title">地图</span> <span class="arrow down"></span></button> <button type="button" aria-label="地图" class="mobile-dropdown-title"><span class="title">地图</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/f1-graph-docs/components/ol/dev/" class="nav-link">
+  组件使用
+</a></li><li class="dropdown-item"><!----> <a href="/f1-graph-docs/components/ol/manual/" class="nav-link">
+  操作手册
+</a></li></ul></div></div><div class="nav-item"><a href="/f1-graph-docs/shapes/" class="nav-link">
+  图元设计
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他" class="dropdown-title"><span class="title">其他</span> <span class="arrow down"></span></button> <button type="button" aria-label="其他" class="mobile-dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/f1-graph-docs/other/version/" class="nav-link">
+  版本清单
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/f1-graph-docs/guide/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><a href="/f1-graph-docs/dataInterface-v1/" class="nav-link router-link-active">
+  数据接口
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="组态图" class="dropdown-title"><span class="title">组态图</span> <span class="arrow down"></span></button> <button type="button" aria-label="组态图" class="mobile-dropdown-title"><span class="title">组态图</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/f1-graph-docs/components/joint/manual/" class="nav-link">
+  操作手册
+</a></li><li class="dropdown-item"><!----> <a href="/f1-graph-docs/components/joint/dev/" class="nav-link">
+  组件使用
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="地图" class="dropdown-title"><span class="title">地图</span> <span class="arrow down"></span></button> <button type="button" aria-label="地图" class="mobile-dropdown-title"><span class="title">地图</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/f1-graph-docs/components/ol/dev/" class="nav-link">
+  组件使用
+</a></li><li class="dropdown-item"><!----> <a href="/f1-graph-docs/components/ol/manual/" class="nav-link">
+  操作手册
+</a></li></ul></div></div><div class="nav-item"><a href="/f1-graph-docs/shapes/" class="nav-link">
+  图元设计
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他" class="dropdown-title"><span class="title">其他</span> <span class="arrow down"></span></button> <button type="button" aria-label="其他" class="mobile-dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/f1-graph-docs/other/version/" class="nav-link">
+  版本清单
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>数据接口</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/f1-graph-docs/dataInterface-v1/" aria-current="page" class="sidebar-link">概述</a></li><li><a href="/f1-graph-docs/dataInterface-v1/map-format.html" aria-current="page" class="active sidebar-link">WebGIS地图</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/f1-graph-docs/dataInterface-v1/map-format.html#geojson格式" class="sidebar-link">GeoJSON格式</a></li><li class="sidebar-sub-header"><a href="/f1-graph-docs/dataInterface-v1/map-format.html#图形平台" class="sidebar-link">图形平台</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/f1-graph-docs/dataInterface-v1/map-format.html#样式定义" class="sidebar-link">样式定义</a></li><li class="sidebar-sub-header"><a href="/f1-graph-docs/dataInterface-v1/map-format.html#连接关系" class="sidebar-link">连接关系</a></li><li class="sidebar-sub-header"><a href="/f1-graph-docs/dataInterface-v1/map-format.html#连接锚点" class="sidebar-link">连接锚点</a></li><li class="sidebar-sub-header"><a href="/f1-graph-docs/dataInterface-v1/map-format.html#文字标签" class="sidebar-link">文字标签</a></li><li class="sidebar-sub-header"><a href="/f1-graph-docs/dataInterface-v1/map-format.html#缩放层级" class="sidebar-link">缩放层级</a></li></ul></li><li class="sidebar-sub-header"><a href="/f1-graph-docs/dataInterface-v1/map-format.html#示例" class="sidebar-link">示例</a></li></ul></li><li><a href="/f1-graph-docs/dataInterface-v1/configuration-format.html" class="sidebar-link">组态图</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/f1-graph-docs/dataInterface-v1/configuration-format.html#点图形" class="sidebar-link">点图形</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="webgis地图"><a href="#webgis地图" class="header-anchor">#</a> WebGIS地图</h1> <p>采用符合OGC规范的GeoJSON格式作为数据交互的格式，可通过GeoJSON文件导入数据或从服务端获取GeoJSON数据，进行数据展示。</p> <h2 id="geojson格式"><a href="#geojson格式" class="header-anchor">#</a> GeoJSON格式</h2> <ul><li><p>GeoJSON是一种对各种地理数据结构进行编码的格式，基于Javascript对象表示地理空间信息数据交换格式。</p></li> <li><p>GeoJSON对象可以表示几何、特征或者特征集合。</p></li> <li><p>GeoJSON支持几何类型：点、线、面、多点、多线、多面和几何集合。</p></li> <li><p>GeoJSON里的特征包含一个几何对象和其他属性，特征集合表示一系列特征。</p></li></ul> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;FeatureCollection&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 固定写法</span>
+    <span class="token property">&quot;features&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;geometry&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token property">&quot;coordinates&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                    <span class="token number">103.33815554369201</span><span class="token punctuation">,</span>
+                    <span class="token number">35.939981843692</span>
+                <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Point&quot;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Feature&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;properties&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token property">&quot;textMinZoomLevel&quot;</span><span class="token operator">:</span> <span class="token number">16</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;devName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;110kV枣园变电站&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;style&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;image&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                        <span class="token property">&quot;font-symbol&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                            <span class="token property">&quot;radius&quot;</span><span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;glyph&quot;</span><span class="token operator">:</span> <span class="token string">&quot;icon-01020010&quot;</span><span class="token punctuation">,</span>
+                            <span class="token property">&quot;color&quot;</span><span class="token operator">:</span> <span class="token string">&quot;green&quot;</span>
+                        <span class="token punctuation">}</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;maxZoomLevel&quot;</span><span class="token operator">:</span> <span class="token number">20</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;graphId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;241617&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;devType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;变电站&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;devId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;370BEC35-74AB-48AC-A4FE-DD87D807E1C6-00198&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;110kV枣园变电站&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;textMaxZoomLevel&quot;</span><span class="token operator">:</span> <span class="token number">20</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;minZoomLevel&quot;</span><span class="token operator">:</span> <span class="token number">12</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="图形平台"><a href="#图形平台" class="header-anchor">#</a> 图形平台</h2> <p>在GeoJSON基础之上，通过properties对象定义图形平台webgis地图中使用的属性信息。</p> <h3 id="样式定义"><a href="#样式定义" class="header-anchor">#</a> 样式定义</h3> <h4 id="point"><a href="#point" class="header-anchor">#</a> Point</h4> <h5 id="circle图元符号"><a href="#circle图元符号" class="header-anchor">#</a> circle图元符号</h5> <div class="language-json extra-class"><pre class="language-json"><code><span class="token comment">//circle符号渲染定义</span>
+<span class="token punctuation">{</span>
+    <span class="token comment">//固定格式，代表是一个图形元素</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Feature&quot;</span><span class="token punctuation">,</span>
+    <span class="token comment">//几何图形坐标定义</span>
+    <span class="token property">&quot;geometry&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token comment">//几何图形类型，包含Point、LineString、Polygon</span>
+        <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Point&quot;</span><span class="token punctuation">,</span>
+        <span class="token comment">//地理坐标，点是一个一纬数组</span>
+        <span class="token property">&quot;coordinates&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">105.380859375</span><span class="token punctuation">,</span> <span class="token number">31.57853542647338</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">//图形元素的属性信息，除必要字段外，其他属性可根据实际需求自由组织</span>
+    <span class="token property">&quot;properties&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token comment">//图形元素唯一标识，不能重复</span>
+        <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ganTai_1&quot;</span><span class="token punctuation">,</span>
+        <span class="token comment">//图形显示到地图中的样式</span>
+        <span class="token property">&quot;style&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token comment">//点图形渲染图标</span>
+            <span class="token property">&quot;image&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token comment">//图元符号使用圆渲染</span>
+                <span class="token property">&quot;circle&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token comment">//圆的边框颜色、边框线宽度</span>
+                    <span class="token property">&quot;stroke&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token property">&quot;color&quot;</span><span class="token operator">:</span> <span class="token string">&quot;red&quot;</span><span class="token punctuation">,</span> <span class="token property">&quot;width&quot;</span><span class="token operator">:</span> <span class="token number">1</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                    <span class="token comment">//圆的填充颜色</span>
+                    <span class="token property">&quot;fill&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#000000&quot;</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>;
+</code></pre></div><h5 id="font-symbol字体图标"><a href="#font-symbol字体图标" class="header-anchor">#</a> font-symbol字体图标</h5> <div class="language-json extra-class"><pre class="language-json"><code><span class="token comment">//定义字体图标格式的图元符号渲染</span>
+<span class="token punctuation">{</span>
+    <span class="token comment">//固定格式，代表是一个图形元素</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Feature&quot;</span><span class="token punctuation">,</span>
+        <span class="token comment">//几何图形坐标定义</span>
+    <span class="token property">&quot;geometry&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token comment">//几何图形类型，包含Point、LineString、Polygon</span>
+        <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Point&quot;</span><span class="token punctuation">,</span>
+        <span class="token comment">//地理坐标，点是一个一纬数组</span>
+        <span class="token property">&quot;coordinates&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">105.380859375</span><span class="token punctuation">,</span> <span class="token number">31.57853542647338</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">//图形元素的属性信息，除必要字段外，其他属性可根据实际需求自由组织</span>
+    <span class="token property">&quot;properties&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token comment">//图形元素唯一标识，不能重复</span>
+        <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ganTai_1&quot;</span><span class="token punctuation">,</span>
+            <span class="token comment">//图形显示到地图中的样式</span>
+            <span class="token property">&quot;style&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token comment">//点图形渲染图标</span>
+            <span class="token property">&quot;image&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token comment">//图元符号使字体图标渲染</span>
+                <span class="token property">&quot;font-symbol&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token comment">//字体图标定义的名称</span>
+                    <span class="token property">&quot;glyph&quot;</span><span class="token operator">:</span> <span class="token string">&quot;icon-01020010&quot;</span><span class="token punctuation">,</span>
+                    <span class="token comment">//符号渲染的颜色</span>
+                    <span class="token property">&quot;color&quot;</span><span class="token operator">:</span> <span class="token string">&quot;red&quot;</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>;
+</code></pre></div><h5 id="svg-symbol图元符号"><a href="#svg-symbol图元符号" class="header-anchor">#</a> svg-symbol图元符号</h5> <div class="language-json extra-class"><pre class="language-json"><code><span class="token comment">//svg符号渲染定义</span>
+<span class="token punctuation">{</span>
+    <span class="token comment">//固定格式，代表是一个图形元素</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Feature&quot;</span><span class="token punctuation">,</span>
+    <span class="token comment">//几何图形坐标定义</span>
+    <span class="token property">&quot;geometry&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token comment">//几何图形类型，包含Point、LineString、Polygon</span>
+        <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Point&quot;</span><span class="token punctuation">,</span>
+        <span class="token comment">//地理坐标，点是一个一纬数组</span>
+        <span class="token property">&quot;coordinates&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">105.380859375</span><span class="token punctuation">,</span> <span class="token number">31.57853542647338</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">//图形元素的属性信息，除必要字段外，其他属性可根据实际需求自由组织</span>
+    <span class="token property">&quot;properties&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token comment">//图形元素唯一标识，不能重复</span>
+        <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ganTai_1&quot;</span><span class="token punctuation">,</span>
+            <span class="token comment">//图形显示到地图中的样式</span>
+            <span class="token property">&quot;style&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token comment">//点图形渲染图标</span>
+            <span class="token property">&quot;image&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token comment">//图元符号使用svg定义的图元进行渲染</span>
+                <span class="token property">&quot;svg-symbol&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token comment">//定义的svg图元符号类型名称</span>
+                    <span class="token property">&quot;symbolType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;electricity.GanTa&quot;</span><span class="token punctuation">,</span>
+                    <span class="token comment">//边框颜色、边框线宽度</span>
+                    <span class="token property">&quot;stroke&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token property">&quot;color&quot;</span><span class="token operator">:</span> <span class="token string">&quot;blue&quot;</span><span class="token punctuation">,</span> <span class="token property">&quot;width&quot;</span><span class="token operator">:</span> <span class="token number">0.1</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                    <span class="token comment">//填充颜色</span>
+                    <span class="token property">&quot;fill&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#00ff00&quot;</span><span class="token punctuation">,</span>
+                    <span class="token comment">//图元符号大小，默认30*30</span>
+                    <span class="token property">&quot;size&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token property">&quot;width&quot;</span><span class="token operator">:</span> <span class="token number">30</span><span class="token punctuation">,</span> <span class="token property">&quot;height&quot;</span><span class="token operator">:</span> <span class="token number">30</span> <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>;
+</code></pre></div><h4 id="linestring线图形"><a href="#linestring线图形" class="header-anchor">#</a> LineString线图形</h4> <div class="language-json extra-class"><pre class="language-json"><code><span class="token comment">//线图形样式定义</span>
+<span class="token punctuation">{</span>
+    <span class="token comment">//固定格式，代表是一个图形元素</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Feature&quot;</span><span class="token punctuation">,</span>
+    <span class="token comment">//几何图形坐标定义</span>
+    <span class="token property">&quot;geometry&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token comment">//几何图形类型，包含Point、LineString、Polygon</span>
+        <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;LineString&quot;</span><span class="token punctuation">,</span>
+        <span class="token comment">//地理坐标，点是一个二纬数组</span>
+        <span class="token property">&quot;coordinates&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">[</span><span class="token number">105.6005859375</span><span class="token punctuation">,</span> <span class="token number">30.65681556429287</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token punctuation">[</span><span class="token number">107.95166015624999</span><span class="token punctuation">,</span> <span class="token number">31.98944183792288</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token punctuation">[</span><span class="token number">109.3798828125</span><span class="token punctuation">,</span> <span class="token number">30.031055426540206</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token punctuation">[</span><span class="token number">107.7978515625</span><span class="token punctuation">,</span> <span class="token number">29.935895213372444</span><span class="token punctuation">]</span>
+        <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">//图形元素的属性信息，除必要字段外，其他属性可根据实际需求自由组织</span>
+    <span class="token property">&quot;properties&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token comment">//图形元素唯一标识，不能重复</span>
+        <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ganTai_1&quot;</span><span class="token punctuation">,</span>
+            <span class="token comment">//图形显示到地图中的样式</span>
+            <span class="token property">&quot;style&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token comment">//边框颜色、边框线宽度</span>
+            <span class="token property">&quot;stroke&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token comment">//边框颜色</span>
+                <span class="token property">&quot;color&quot;</span><span class="token operator">:</span> <span class="token string">&quot;blue&quot;</span><span class="token punctuation">,</span>
+                <span class="token comment">//边框线宽度</span>
+                <span class="token property">&quot;width&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+                <span class="token comment">//虚线,可选项，undefined、[0,0]都是实线，详细参考canva虚线API</span>
+                <span class="token property">&quot;lineDash&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">]</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>;
+</code></pre></div><h4 id="polygon多边形"><a href="#polygon多边形" class="header-anchor">#</a> Polygon多边形</h4> <div class="language-json extra-class"><pre class="language-json"><code><span class="token comment">//多边形样式定义</span>
+<span class="token punctuation">{</span>
+    <span class="token comment">//固定格式，代表是一个图形元素</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Feature&quot;</span><span class="token punctuation">,</span>
+    <span class="token comment">//几何图形坐标定义</span>
+    <span class="token property">&quot;geometry&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token comment">//几何图形类型，包含Point、LineString、Polygon</span>
+        <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Polygon&quot;</span><span class="token punctuation">,</span>
+        <span class="token comment">//地理坐标，点是一个二纬数组</span>
+        <span class="token property">&quot;coordinates&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">[</span>
+                <span class="token punctuation">[</span><span class="token number">106.10595703125</span><span class="token punctuation">,</span> <span class="token number">33.33970700424026</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                <span class="token punctuation">[</span><span class="token number">106.32568359375</span><span class="token punctuation">,</span> <span class="token number">32.41706632846282</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                <span class="token punctuation">[</span><span class="token number">108.03955078125</span><span class="token punctuation">,</span> <span class="token number">32.2313896627376</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                <span class="token punctuation">[</span><span class="token number">108.25927734375</span><span class="token punctuation">,</span> <span class="token number">33.15594830078649</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                <span class="token punctuation">[</span><span class="token number">106.10595703125</span><span class="token punctuation">,</span> <span class="token number">33.33970700424026</span><span class="token punctuation">]</span>
+            <span class="token punctuation">]</span>
+        <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">//图形元素的属性信息，除必要字段外，其他属性可根据实际需求自由组织</span>
+    <span class="token property">&quot;properties&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token comment">//图形元素唯一标识，不能重复</span>
+        <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;polygon_1&quot;</span><span class="token punctuation">,</span>
+        <span class="token comment">//图形显示到地图中的样式</span>
+        <span class="token property">&quot;style&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token comment">//边框颜色、边框线宽度</span>
+            <span class="token property">&quot;stroke&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token comment">//边框颜色</span>
+                <span class="token property">&quot;color&quot;</span><span class="token operator">:</span> <span class="token string">&quot;blue&quot;</span><span class="token punctuation">,</span>
+                <span class="token comment">//边框线宽度</span>
+                <span class="token property">&quot;width&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+                <span class="token comment">//虚线,可选项，undefined、[0,0]都是实线，详细参考canvaAPI</span>
+                <span class="token property">&quot;lineDash&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">]</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token comment">//填充颜色</span>
+            <span class="token property">&quot;fill&quot;</span><span class="token operator">:</span> <span class="token string">&quot;rgba(0,0,0,0)&quot;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>;
+</code></pre></div><h3 id="连接关系"><a href="#连接关系" class="header-anchor">#</a> 连接关系</h3> <p>连接关系是一条连接线，首尾连接点图形设备。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//定义连接线对象</span>
+<span class="token keyword">var</span> ganTaObj1 <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Feature&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;geometry&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token string">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">'Point'</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;coordinates&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">105.6005859375</span><span class="token punctuation">,</span> <span class="token number">30.65681556429287</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">//属性内容可根据实际需求自由组织</span>
+    <span class="token string">&quot;properties&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        id<span class="token operator">:</span> <span class="token string">&quot;ganTaGraphId_1&quot;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token comment">//定义连接线对象</span>
+<span class="token keyword">var</span> ganTaObj2 <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Feature&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;geometry&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token string">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">'Point'</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;coordinates&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">107.95166015624999</span><span class="token punctuation">,</span> <span class="token number">31.98944183792288</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">//属性内容可根据实际需求自由组织</span>
+    <span class="token string">&quot;properties&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        id<span class="token operator">:</span> <span class="token string">&quot;ganTaGraphId_2&quot;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token comment">//定义连接线对象</span>
+<span class="token keyword">var</span> lineObj <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Feature&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;geometry&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token string">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">'Point'</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;coordinates&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token number">105.6005859375</span><span class="token punctuation">,</span> <span class="token number">30.65681556429287</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">107.95166015624999</span><span class="token punctuation">,</span> <span class="token number">31.98944183792288</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">//属性内容可根据实际需求自由组织</span>
+    <span class="token string">&quot;properties&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token string">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;lineGraphId&quot;</span><span class="token punctuation">,</span>
+        <span class="token comment">//线的起点连接的对象，这里是定义的ganTaObj1对象的id</span>
+        <span class="token string">&quot;source&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token comment">//起点连接的Point图形Id</span>
+            <span class="token string">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ganTaiGraphId_1&quot;</span><span class="token punctuation">,</span>
+            <span class="token comment">//连接锚点Id，如果连接的Point不存在锚点，忽略此项</span>
+            <span class="token string">&quot;port&quot;</span><span class="token operator">:</span> <span class="token string">&quot;portId@terminal_1&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token comment">//线的终点连接的对象，这里是定义的ganTaObj2对象id</span>
+        <span class="token string">&quot;target&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token comment">//起点连接的Point图形Id</span>
+            <span class="token string">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ganTaiGraphId_2&quot;</span><span class="token punctuation">,</span>
+            <span class="token comment">//连接锚点Id，如果连接的Point不存在锚点，忽略此项</span>
+            <span class="token string">&quot;port&quot;</span><span class="token operator">:</span> <span class="token string">&quot;portId@terminal_2&quot;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="连接锚点"><a href="#连接锚点" class="header-anchor">#</a> 连接锚点</h3> <p>连接锚点是指电力图元中供连接线连接的热点。只存在于Point几何图形中。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> bianYaQiObj <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Feature&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;geometry&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token string">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Point&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;coordinates&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token number">114.47813543273962</span><span class="token punctuation">,</span>
+            <span class="token number">38.028923753497004</span>
+        <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;properties&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token string">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;C91AE327-85A0-0001-EED6-184A18ADC700&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;style&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token string">&quot;image&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token string">&quot;svg-symbol&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token comment">//</span>
+                    <span class="token string">&quot;symbolType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;electricity.ZhuShangBianYaQi(ZhuanYong)&quot;</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;stroke&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                        <span class="token string">&quot;color&quot;</span><span class="token operator">:</span> <span class="token string">&quot;blue&quot;</span><span class="token punctuation">,</span>
+                        <span class="token string">&quot;width&quot;</span><span class="token operator">:</span> <span class="token number">1</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token comment">//锚点定义</span>
+        <span class="token string">&quot;ports&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token comment">//锚点数组集合，有几个锚点就是几个数组对象</span>
+            <span class="token string">&quot;items&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token punctuation">{</span>
+                    <span class="token comment">//锚点分组名称定义</span>
+                    <span class="token string">&quot;group&quot;</span><span class="token operator">:</span> <span class="token string">&quot;terminal_1&quot;</span><span class="token punctuation">,</span>
+                    <span class="token comment">//锚点参数</span>
+                    <span class="token string">&quot;args&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                        <span class="token comment">//以图元左上角为原点，锚点x坐标与宽度的百分比</span>
+                        <span class="token string">&quot;x&quot;</span><span class="token operator">:</span> <span class="token string">&quot;50%&quot;</span><span class="token punctuation">,</span>
+                        <span class="token comment">//以图元左上角为原点，锚点y坐标与高度的百分比</span>
+                        <span class="token string">&quot;y&quot;</span><span class="token operator">:</span> <span class="token string">&quot;5.546566666666666%&quot;</span>
+                    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                    <span class="token comment">//锚点唯一标识</span>
+                    <span class="token string">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;C91AE327-85A0-0001-EED6-184A18ADC700@terminal_1&quot;</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                    <span class="token string">&quot;group&quot;</span><span class="token operator">:</span> <span class="token string">&quot;terminal_2&quot;</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;args&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                        <span class="token string">&quot;x&quot;</span><span class="token operator">:</span> <span class="token string">&quot;50%&quot;</span><span class="token punctuation">,</span>
+                        <span class="token string">&quot;y&quot;</span><span class="token operator">:</span> <span class="token string">&quot;94.64093333333334%&quot;</span>
+                    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;C91AE327-85A0-0001-EED6-184A18ADC700@terminal_2&quot;</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="文字标签"><a href="#文字标签" class="header-anchor">#</a> 文字标签</h3> <h4 id="默认文本"><a href="#默认文本" class="header-anchor">#</a> 默认文本</h4> <div class="language-json extra-class"><pre class="language-json"><code><span class="token comment">//定义Point图形元素显示的文本标签</span>
+<span class="token punctuation">{</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Feature&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;geometry&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Point&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;coordinates&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">105.6005859375</span><span class="token punctuation">,</span> <span class="token number">30.65681556429287</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">//属性内容可根据实际需求自由组织</span>
+    <span class="token property">&quot;properties&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;pointGraphId&quot;</span><span class="token punctuation">,</span>
+        <span class="token comment">//默认显示的标签</span>
+        <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;显示标签&quot;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>;
+</code></pre></div><h4 id="文本样式"><a href="#文本样式" class="header-anchor">#</a> 文本样式</h4> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Feature&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;geometry&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Point&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;coordinates&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">105.380859375</span><span class="token punctuation">,</span> <span class="token number">31.57853542647338</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">//图形元素属性</span>
+    <span class="token property">&quot;properties&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token comment">//图形样式</span>
+        <span class="token property">&quot;style&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;text&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token comment">//文字放置，包含的值：point,line</span>
+                <span class="token property">&quot;placement&quot;</span><span class="token operator">:</span> <span class="token string">&quot;point&quot;</span><span class="token punctuation">,</span>
+                <span class="token comment">//文字对齐，包含：left,right,center,endorstart</span>
+                <span class="token property">&quot;textAlign&quot;</span><span class="token operator">:</span> <span class="token string">&quot;left&quot;</span><span class="token punctuation">,</span>
+                <span class="token comment">//文字位置基准线，包含：</span>
+                <span class="token comment">//bottom,top,middle,alphabetic,hanging,ideographic</span>
+                <span class="token property">&quot;textBaseline&quot;</span><span class="token operator">:</span> <span class="token string">&quot;middle&quot;</span><span class="token punctuation">,</span>
+                <span class="token comment">//字体，包含字体样式风格、字体大小、字体名称</span>
+                <span class="token property">&quot;font&quot;</span><span class="token operator">:</span> <span class="token string">&quot;normal12px宋体&quot;</span><span class="token punctuation">,</span>
+                <span class="token comment">//显示文字，缺省值使用name属性的值</span>
+                <span class="token property">&quot;text&quot;</span><span class="token operator">:</span> <span class="token string">&quot;显示文字，缺省值使用name属性的值&quot;</span><span class="token punctuation">,</span>
+                <span class="token comment">//文字颜色</span>
+                <span class="token property">&quot;fill&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#aa3300&quot;</span><span class="token punctuation">,</span>
+                <span class="token comment">//文字描边颜色、描边边框宽度</span>
+                <span class="token property">&quot;stroke&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span> color<span class="token operator">:</span> <span class="token string">&quot;#aa3300&quot;</span><span class="token punctuation">,</span> width<span class="token operator">:</span> <span class="token number">1</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token comment">//经度方向上的偏移量，单位像素</span>
+                <span class="token property">&quot;offsetX&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                <span class="token comment">//纬度方向上的偏移量，单位像素</span>
+                <span class="token property">&quot;offsetY&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                <span class="token comment">//文字标签背景颜色，缺省无背景颜色</span>
+                <span class="token property">&quot;backgroundFill&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+                <span class="token comment">//文字标签背景边框颜色、宽度，缺省无背景颜色</span>
+                <span class="token property">&quot;backgroundStroke&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span> color<span class="token operator">:</span> <span class="token string">&quot;#aa3300&quot;</span><span class="token punctuation">,</span> width<span class="token operator">:</span> <span class="token number">1</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token comment">//文字缩放比例</span>
+                <span class="token property">&quot;scale&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+                <span class="token comment">//是否随地图视图旋转</span>
+                <span class="token property">&quot;rotateWithView&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+                <span class="token comment">//文字旋转角度，弧度制</span>
+                <span class="token property">&quot;rotation&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                <span class="token comment">//距离文字内容的缝隙值，</span>
+                <span class="token comment">//数组中值的顺序为[top,right,bottom,left]</span>
+                <span class="token property">&quot;padding&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                <span class="token comment">//对于多边形标签或当placement设置为“line”时，</span>
+                <span class="token comment">//允许文本超出标签位置处多边形的宽度或所沿路径的长度。</span>
+                <span class="token property">&quot;overflow&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>;
+</code></pre></div><h3 id="缩放层级"><a href="#缩放层级" class="header-anchor">#</a> 缩放层级</h3> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Feature&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;geometry&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Point&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;coordinates&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">105.380859375</span><span class="token punctuation">,</span> <span class="token number">31.57853542647338</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">//图形元素属性</span>
+    <span class="token property">&quot;properties&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token comment">//图形显示最小缩放层级</span>
+        <span class="token property">&quot;minZoomLevel&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        <span class="token comment">//图形显示的最大缩放层级</span>
+        <span class="token property">&quot;maxZoomLevel&quot;</span><span class="token operator">:</span> <span class="token number">18</span><span class="token punctuation">,</span>
+        <span class="token comment">//图形文字标签最小缩放层级</span>
+        <span class="token property">&quot;textMinZoomLevel&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        <span class="token comment">//图形显示文字标签的最大缩放层级</span>
+        <span class="token property">&quot;textMaxZoomLevel&quot;</span><span class="token operator">:</span> <span class="token number">18</span><span class="token punctuation">,</span>
+        <span class="token comment">//图形样式属性设置</span>
+        <span class="token property">&quot;style&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="示例"><a href="#示例" class="header-anchor">#</a> 示例</h2> <div class="demo-block demo-zh-CN demo-map-format.html" data-v-5260fbd6><div class="demo-content" data-v-5260fbd6><div><div style="height:400px;width:100%;"><OLMap center="103.778611,36.066111"><AMapTileLayer></AMapTileLayer> <OLVectorLayer><OLGeoJsonSource features="[object Object],[object Object],[object Object]"></OLGeoJsonSource></OLVectorLayer></OLMap></div></div></div> <div class="meta" data-v-5260fbd6><!----> <div class="code-content" data-v-5260fbd6><div class="language-html extra-class" data-v-5260fbd6><pre class="language-html" data-v-5260fbd6><code data-v-5260fbd6><span class="token tag" data-v-5260fbd6><span class="token tag" data-v-5260fbd6><span class="token punctuation" data-v-5260fbd6>&lt;</span>template</span><span class="token punctuation" data-v-5260fbd6>&gt;</span></span>
+    <span class="token tag" data-v-5260fbd6><span class="token tag" data-v-5260fbd6><span class="token punctuation" data-v-5260fbd6>&lt;</span>div</span><span class="token style-attr language-css" data-v-5260fbd6><span class="token attr-name" data-v-5260fbd6> <span class="token attr-name" data-v-5260fbd6>style</span></span><span class="token punctuation" data-v-5260fbd6>=&quot;</span><span class="token attr-value" data-v-5260fbd6><span class="token property" data-v-5260fbd6>height</span><span class="token punctuation" data-v-5260fbd6>:</span> 400px<span class="token punctuation" data-v-5260fbd6>;</span> <span class="token property" data-v-5260fbd6>width</span><span class="token punctuation" data-v-5260fbd6>:</span> 100%</span><span class="token punctuation" data-v-5260fbd6>&quot;</span></span><span class="token punctuation" data-v-5260fbd6>&gt;</span></span>
+        <span class="token comment" data-v-5260fbd6>&lt;!--地图组件--&gt;</span>
+        <span class="token tag" data-v-5260fbd6><span class="token tag" data-v-5260fbd6><span class="token punctuation" data-v-5260fbd6>&lt;</span>OLMap</span> <span class="token attr-name" data-v-5260fbd6>:center</span><span class="token attr-value" data-v-5260fbd6><span class="token punctuation attr-equals" data-v-5260fbd6>=</span><span class="token punctuation" data-v-5260fbd6>&quot;</span>initCenter<span class="token punctuation" data-v-5260fbd6>&quot;</span></span> <span class="token attr-name" data-v-5260fbd6>@ready</span><span class="token attr-value" data-v-5260fbd6><span class="token punctuation attr-equals" data-v-5260fbd6>=</span><span class="token punctuation" data-v-5260fbd6>&quot;</span>_ready<span class="token punctuation" data-v-5260fbd6>&quot;</span></span><span class="token punctuation" data-v-5260fbd6>&gt;</span></span>
+            <span class="token comment" data-v-5260fbd6>&lt;!--基础底图Google瓦片--&gt;</span>
+            <span class="token tag" data-v-5260fbd6><span class="token tag" data-v-5260fbd6><span class="token punctuation" data-v-5260fbd6>&lt;</span>AMapTileLayer</span><span class="token punctuation" data-v-5260fbd6>&gt;</span></span><span class="token tag" data-v-5260fbd6><span class="token tag" data-v-5260fbd6><span class="token punctuation" data-v-5260fbd6>&lt;/</span>AMapTileLayer</span><span class="token punctuation" data-v-5260fbd6>&gt;</span></span>
+            <span class="token comment" data-v-5260fbd6>&lt;!--设备数据图层--&gt;</span>
+            <span class="token tag" data-v-5260fbd6><span class="token tag" data-v-5260fbd6><span class="token punctuation" data-v-5260fbd6>&lt;</span>OLVectorLayer</span><span class="token punctuation" data-v-5260fbd6>&gt;</span></span>
+                <span class="token comment" data-v-5260fbd6>&lt;!--设备数据源--&gt;</span>
+                <span class="token tag" data-v-5260fbd6><span class="token tag" data-v-5260fbd6><span class="token punctuation" data-v-5260fbd6>&lt;</span>OLGeoJsonSource</span> <span class="token attr-name" data-v-5260fbd6>:features</span><span class="token attr-value" data-v-5260fbd6><span class="token punctuation attr-equals" data-v-5260fbd6>=</span><span class="token punctuation" data-v-5260fbd6>&quot;</span>features<span class="token punctuation" data-v-5260fbd6>&quot;</span></span><span class="token punctuation" data-v-5260fbd6>&gt;</span></span><span class="token tag" data-v-5260fbd6><span class="token tag" data-v-5260fbd6><span class="token punctuation" data-v-5260fbd6>&lt;/</span>OLGeoJsonSource</span><span class="token punctuation" data-v-5260fbd6>&gt;</span></span>
+            <span class="token tag" data-v-5260fbd6><span class="token tag" data-v-5260fbd6><span class="token punctuation" data-v-5260fbd6>&lt;/</span>OLVectorLayer</span><span class="token punctuation" data-v-5260fbd6>&gt;</span></span>
+        <span class="token tag" data-v-5260fbd6><span class="token tag" data-v-5260fbd6><span class="token punctuation" data-v-5260fbd6>&lt;/</span>OLMap</span><span class="token punctuation" data-v-5260fbd6>&gt;</span></span>
+    <span class="token tag" data-v-5260fbd6><span class="token tag" data-v-5260fbd6><span class="token punctuation" data-v-5260fbd6>&lt;/</span>div</span><span class="token punctuation" data-v-5260fbd6>&gt;</span></span>
+<span class="token tag" data-v-5260fbd6><span class="token tag" data-v-5260fbd6><span class="token punctuation" data-v-5260fbd6>&lt;/</span>template</span><span class="token punctuation" data-v-5260fbd6>&gt;</span></span>
+
+<span class="token tag" data-v-5260fbd6><span class="token tag" data-v-5260fbd6><span class="token punctuation" data-v-5260fbd6>&lt;</span>script</span><span class="token punctuation" data-v-5260fbd6>&gt;</span></span><span class="token script" data-v-5260fbd6><span class="token language-javascript" data-v-5260fbd6>
+<span class="token keyword" data-v-5260fbd6>export</span> <span class="token keyword" data-v-5260fbd6>default</span> <span class="token punctuation" data-v-5260fbd6>{</span>
+    methods<span class="token operator" data-v-5260fbd6>:</span> <span class="token punctuation" data-v-5260fbd6>{</span>
+        <span class="token comment" data-v-5260fbd6>/**
+         * 地图组件初始化之后，定义svg图元符号并注册
+         */</span>
+        <span class="token function" data-v-5260fbd6>_ready</span><span class="token punctuation" data-v-5260fbd6>(</span><span class="token punctuation" data-v-5260fbd6>)</span> <span class="token punctuation" data-v-5260fbd6>{</span>
+            <span class="token comment" data-v-5260fbd6>//添加变电站图元定义</span>
+            <span class="token keyword" data-v-5260fbd6>this</span><span class="token punctuation" data-v-5260fbd6>.</span>$SvgSymbol<span class="token punctuation" data-v-5260fbd6>.</span><span class="token function" data-v-5260fbd6>addDefs</span><span class="token punctuation" data-v-5260fbd6>(</span><span class="token punctuation" data-v-5260fbd6>{</span>
+                <span class="token string" data-v-5260fbd6>&quot;electricity.BianDianZhan&quot;</span><span class="token operator" data-v-5260fbd6>:</span> <span class="token punctuation" data-v-5260fbd6>{</span>
+                    svg<span class="token operator" data-v-5260fbd6>:</span> <span class="token template-string" data-v-5260fbd6><span class="token template-punctuation string" data-v-5260fbd6>`</span><span class="token string" data-v-5260fbd6>&lt;g&gt;&lt;circle r=&quot;13.99887&quot; cx=&quot;14.99887&quot; cy=&quot;14.99887&quot; fill-opacity=&quot;0&quot;/&gt;&lt;circle r=&quot;10.26584&quot; cx=&quot;14.99887&quot; cy=&quot;14.99887&quot; fill-opacity=&quot;0&quot;/&gt;&lt;circle r=&quot;5.59955&quot; cx=&quot;14.99887&quot; cy=&quot;14.99887&quot; fill=&quot;#027871&quot; fill-opacity=&quot;1&quot;/&gt;&lt;/g&gt;</span><span class="token template-punctuation string" data-v-5260fbd6>`</span></span>
+                <span class="token punctuation" data-v-5260fbd6>}</span>
+            <span class="token punctuation" data-v-5260fbd6>}</span><span class="token punctuation" data-v-5260fbd6>)</span><span class="token punctuation" data-v-5260fbd6>;</span>
+        <span class="token punctuation" data-v-5260fbd6>}</span>
+    <span class="token punctuation" data-v-5260fbd6>}</span><span class="token punctuation" data-v-5260fbd6>,</span>
+
+    <span class="token function" data-v-5260fbd6>data</span><span class="token punctuation" data-v-5260fbd6>(</span><span class="token punctuation" data-v-5260fbd6>)</span> <span class="token punctuation" data-v-5260fbd6>{</span>
+        <span class="token keyword" data-v-5260fbd6>return</span> <span class="token punctuation" data-v-5260fbd6>{</span>
+            initCenter<span class="token operator" data-v-5260fbd6>:</span> <span class="token punctuation" data-v-5260fbd6>[</span><span class="token number" data-v-5260fbd6>103.778611</span><span class="token punctuation" data-v-5260fbd6>,</span> <span class="token number" data-v-5260fbd6>36.066111</span><span class="token punctuation" data-v-5260fbd6>]</span><span class="token punctuation" data-v-5260fbd6>,</span>
+
+            features<span class="token operator" data-v-5260fbd6>:</span> <span class="token punctuation" data-v-5260fbd6>[</span>
+                <span class="token punctuation" data-v-5260fbd6>{</span>
+                    type<span class="token operator" data-v-5260fbd6>:</span> <span class="token string" data-v-5260fbd6>&quot;Feature&quot;</span><span class="token punctuation" data-v-5260fbd6>,</span>
+                    properties<span class="token operator" data-v-5260fbd6>:</span> <span class="token punctuation" data-v-5260fbd6>{</span>
+                        id<span class="token operator" data-v-5260fbd6>:</span> <span class="token string" data-v-5260fbd6>&quot;id_1&quot;</span><span class="token punctuation" data-v-5260fbd6>,</span>
+                        name<span class="token operator" data-v-5260fbd6>:</span> <span class="token string" data-v-5260fbd6>&quot;金雨大厦&quot;</span><span class="token punctuation" data-v-5260fbd6>,</span>
+                        style<span class="token operator" data-v-5260fbd6>:</span> <span class="token punctuation" data-v-5260fbd6>{</span>
+                            visible<span class="token operator" data-v-5260fbd6>:</span> <span class="token boolean" data-v-5260fbd6>true</span><span class="token punctuation" data-v-5260fbd6>,</span>
+                            image<span class="token operator" data-v-5260fbd6>:</span> <span class="token punctuation" data-v-5260fbd6>{</span>
+                                circle<span class="token operator" data-v-5260fbd6>:</span> <span class="token punctuation" data-v-5260fbd6>{</span>
+                                    fill<span class="token operator" data-v-5260fbd6>:</span> <span class="token string" data-v-5260fbd6>&quot;green&quot;</span><span class="token punctuation" data-v-5260fbd6>,</span>
+                                    stroke<span class="token operator" data-v-5260fbd6>:</span> <span class="token punctuation" data-v-5260fbd6>{</span> color<span class="token operator" data-v-5260fbd6>:</span> <span class="token string" data-v-5260fbd6>&quot;blue&quot;</span><span class="token punctuation" data-v-5260fbd6>,</span> width<span class="token operator" data-v-5260fbd6>:</span> <span class="token number" data-v-5260fbd6>2</span> <span class="token punctuation" data-v-5260fbd6>}</span><span class="token punctuation" data-v-5260fbd6>,</span>
+                                    radius<span class="token operator" data-v-5260fbd6>:</span> <span class="token number" data-v-5260fbd6>10</span>
+                                <span class="token punctuation" data-v-5260fbd6>}</span>
+                            <span class="token punctuation" data-v-5260fbd6>}</span>
+                        <span class="token punctuation" data-v-5260fbd6>}</span>
+                    <span class="token punctuation" data-v-5260fbd6>}</span><span class="token punctuation" data-v-5260fbd6>,</span>
+                    geometry<span class="token operator" data-v-5260fbd6>:</span> <span class="token punctuation" data-v-5260fbd6>{</span>
+                        type<span class="token operator" data-v-5260fbd6>:</span> <span class="token string" data-v-5260fbd6>&quot;Point&quot;</span><span class="token punctuation" data-v-5260fbd6>,</span>
+                        coordinates<span class="token operator" data-v-5260fbd6>:</span> <span class="token punctuation" data-v-5260fbd6>[</span><span class="token number" data-v-5260fbd6>103.778611</span><span class="token punctuation" data-v-5260fbd6>,</span> <span class="token number" data-v-5260fbd6>36.066111</span><span class="token punctuation" data-v-5260fbd6>]</span>
+                    <span class="token punctuation" data-v-5260fbd6>}</span>
+                <span class="token punctuation" data-v-5260fbd6>}</span><span class="token punctuation" data-v-5260fbd6>,</span>
+                <span class="token punctuation" data-v-5260fbd6>{</span>
+                    type<span class="token operator" data-v-5260fbd6>:</span> <span class="token string" data-v-5260fbd6>&quot;Feature&quot;</span><span class="token punctuation" data-v-5260fbd6>,</span>
+                    properties<span class="token operator" data-v-5260fbd6>:</span> <span class="token punctuation" data-v-5260fbd6>{</span>
+                        id<span class="token operator" data-v-5260fbd6>:</span> <span class="token string" data-v-5260fbd6>&quot;id_2&quot;</span><span class="token punctuation" data-v-5260fbd6>,</span>
+                        name<span class="token operator" data-v-5260fbd6>:</span> <span class="token string" data-v-5260fbd6>&quot;110kV七里河变电站&quot;</span><span class="token punctuation" data-v-5260fbd6>,</span>
+                        style<span class="token operator" data-v-5260fbd6>:</span> <span class="token punctuation" data-v-5260fbd6>{</span>
+                            image<span class="token operator" data-v-5260fbd6>:</span> <span class="token punctuation" data-v-5260fbd6>{</span>
+                                <span class="token string" data-v-5260fbd6>&quot;svg-symbol&quot;</span><span class="token operator" data-v-5260fbd6>:</span> <span class="token punctuation" data-v-5260fbd6>{</span>
+                                    symbolType<span class="token operator" data-v-5260fbd6>:</span> <span class="token string" data-v-5260fbd6>&quot;electricity.BianDianZhan&quot;</span><span class="token punctuation" data-v-5260fbd6>,</span>
+                                    size<span class="token operator" data-v-5260fbd6>:</span> <span class="token punctuation" data-v-5260fbd6>{</span> width<span class="token operator" data-v-5260fbd6>:</span> <span class="token number" data-v-5260fbd6>20</span><span class="token punctuation" data-v-5260fbd6>,</span> height<span class="token operator" data-v-5260fbd6>:</span> <span class="token number" data-v-5260fbd6>20</span> <span class="token punctuation" data-v-5260fbd6>}</span><span class="token punctuation" data-v-5260fbd6>,</span>
+                                    fill<span class="token operator" data-v-5260fbd6>:</span> <span class="token string" data-v-5260fbd6>&quot;rgba(0,255,0,0)&quot;</span><span class="token punctuation" data-v-5260fbd6>,</span>
+                                    stroke<span class="token operator" data-v-5260fbd6>:</span> <span class="token punctuation" data-v-5260fbd6>{</span> color<span class="token operator" data-v-5260fbd6>:</span> <span class="token string" data-v-5260fbd6>&quot;green&quot;</span><span class="token punctuation" data-v-5260fbd6>,</span> width<span class="token operator" data-v-5260fbd6>:</span> <span class="token number" data-v-5260fbd6>2</span> <span class="token punctuation" data-v-5260fbd6>}</span>
+                                <span class="token punctuation" data-v-5260fbd6>}</span>
+                            <span class="token punctuation" data-v-5260fbd6>}</span>
+                        <span class="token punctuation" data-v-5260fbd6>}</span>
+                    <span class="token punctuation" data-v-5260fbd6>}</span><span class="token punctuation" data-v-5260fbd6>,</span>
+                    geometry<span class="token operator" data-v-5260fbd6>:</span> <span class="token punctuation" data-v-5260fbd6>{</span>
+                        type<span class="token operator" data-v-5260fbd6>:</span> <span class="token string" data-v-5260fbd6>&quot;Point&quot;</span><span class="token punctuation" data-v-5260fbd6>,</span>
+                        coordinates<span class="token operator" data-v-5260fbd6>:</span> <span class="token punctuation" data-v-5260fbd6>[</span><span class="token number" data-v-5260fbd6>103.770654454588</span><span class="token punctuation" data-v-5260fbd6>,</span> <span class="token number" data-v-5260fbd6>36.0838336262833</span><span class="token punctuation" data-v-5260fbd6>]</span>
+                    <span class="token punctuation" data-v-5260fbd6>}</span>
+                <span class="token punctuation" data-v-5260fbd6>}</span><span class="token punctuation" data-v-5260fbd6>,</span>
+                <span class="token punctuation" data-v-5260fbd6>{</span>
+                    type<span class="token operator" data-v-5260fbd6>:</span> <span class="token string" data-v-5260fbd6>&quot;Feature&quot;</span><span class="token punctuation" data-v-5260fbd6>,</span>
+                    properties<span class="token operator" data-v-5260fbd6>:</span> <span class="token punctuation" data-v-5260fbd6>{</span>
+                        id<span class="token operator" data-v-5260fbd6>:</span> <span class="token string" data-v-5260fbd6>&quot;id_1-id_2&quot;</span><span class="token punctuation" data-v-5260fbd6>,</span>
+                        name<span class="token operator" data-v-5260fbd6>:</span> <span class="token string" data-v-5260fbd6>&quot;金雨大厦-110kV七里河变电站&quot;</span><span class="token punctuation" data-v-5260fbd6>,</span>
+                        source<span class="token operator" data-v-5260fbd6>:</span> <span class="token punctuation" data-v-5260fbd6>{</span> id<span class="token operator" data-v-5260fbd6>:</span> <span class="token string" data-v-5260fbd6>&quot;id_1&quot;</span> <span class="token punctuation" data-v-5260fbd6>}</span><span class="token punctuation" data-v-5260fbd6>,</span>
+                        target<span class="token operator" data-v-5260fbd6>:</span> <span class="token punctuation" data-v-5260fbd6>{</span> id<span class="token operator" data-v-5260fbd6>:</span> <span class="token string" data-v-5260fbd6>&quot;id_2&quot;</span> <span class="token punctuation" data-v-5260fbd6>}</span><span class="token punctuation" data-v-5260fbd6>,</span>
+                        style<span class="token operator" data-v-5260fbd6>:</span> <span class="token punctuation" data-v-5260fbd6>{</span>
+                            stroke<span class="token operator" data-v-5260fbd6>:</span> <span class="token punctuation" data-v-5260fbd6>{</span> color<span class="token operator" data-v-5260fbd6>:</span> <span class="token string" data-v-5260fbd6>&quot;green&quot;</span><span class="token punctuation" data-v-5260fbd6>,</span> width<span class="token operator" data-v-5260fbd6>:</span> <span class="token number" data-v-5260fbd6>2</span> <span class="token punctuation" data-v-5260fbd6>}</span>
+                        <span class="token punctuation" data-v-5260fbd6>}</span>
+                    <span class="token punctuation" data-v-5260fbd6>}</span><span class="token punctuation" data-v-5260fbd6>,</span>
+                    geometry<span class="token operator" data-v-5260fbd6>:</span> <span class="token punctuation" data-v-5260fbd6>{</span>
+                        type<span class="token operator" data-v-5260fbd6>:</span> <span class="token string" data-v-5260fbd6>&quot;LineString&quot;</span><span class="token punctuation" data-v-5260fbd6>,</span>
+                        coordinates<span class="token operator" data-v-5260fbd6>:</span> <span class="token punctuation" data-v-5260fbd6>[</span>
+                            <span class="token punctuation" data-v-5260fbd6>[</span><span class="token number" data-v-5260fbd6>103.778611</span><span class="token punctuation" data-v-5260fbd6>,</span> <span class="token number" data-v-5260fbd6>36.066111</span><span class="token punctuation" data-v-5260fbd6>]</span><span class="token punctuation" data-v-5260fbd6>,</span>
+                            <span class="token punctuation" data-v-5260fbd6>[</span><span class="token number" data-v-5260fbd6>103.770654454588</span><span class="token punctuation" data-v-5260fbd6>,</span> <span class="token number" data-v-5260fbd6>36.0838336262833</span><span class="token punctuation" data-v-5260fbd6>]</span>
+                        <span class="token punctuation" data-v-5260fbd6>]</span>
+                    <span class="token punctuation" data-v-5260fbd6>}</span>
+                <span class="token punctuation" data-v-5260fbd6>}</span>
+            <span class="token punctuation" data-v-5260fbd6>]</span>
+        <span class="token punctuation" data-v-5260fbd6>}</span><span class="token punctuation" data-v-5260fbd6>;</span>
+    <span class="token punctuation" data-v-5260fbd6>}</span>
+<span class="token punctuation" data-v-5260fbd6>}</span><span class="token punctuation" data-v-5260fbd6>;</span>
+</span></span><span class="token tag" data-v-5260fbd6><span class="token tag" data-v-5260fbd6><span class="token punctuation" data-v-5260fbd6>&lt;/</span>script</span><span class="token punctuation" data-v-5260fbd6>&gt;</span></span>
+</code></pre></div></div></div> <div class="demo-block-control" style="width:unset;" data-v-5260fbd6><i class="caret-bottom icon" data-v-5260fbd6 data-v-5260fbd6></i> <span style="display:none;" data-v-5260fbd6 data-v-5260fbd6>显示代码</span> <span class="copy-action" style="display:;" data-v-5260fbd6>复制代码</span> <span class="copy-action copy-action-success" style="display:none;" data-v-5260fbd6 data-v-5260fbd6>复制代码</span></div></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/f1-graph-docs/dataInterface-v1/" class="prev router-link-active">
+        概述
+      </a></span> <span class="next"><a href="/f1-graph-docs/dataInterface-v1/configuration-format.html">
+        组态图
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/f1-graph-docs/assets/js/app.4c3d0c5e.js" defer></script><script src="/f1-graph-docs/assets/js/4.0d7b8c46.js" defer></script><script src="/f1-graph-docs/assets/js/38.8f6baf97.js" defer></script>
+  </body>
+</html>

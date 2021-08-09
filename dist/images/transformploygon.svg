@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="30" height="30" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+ <g>
+  <title>Layer 1</title>
+  <rect stroke="#ffffff" id="svg_1" height="24.26667" width="24.26667" y="2.86667" x="2.86667" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" fill="none"/>
+  <path stroke="#ffffff" id="svg_2" d="m12.55005,5.87474l-4.89239,7.09999l2.07018,10.27475l14.4912,0c0,0 -2.03697,-10.20909 -2.01906,-10.19053l-9.64991,-7.18421l-0.00001,0z" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="2" fill="none"/>
+  <ellipse stroke="#ffffff" ry="0.6" rx="0.6" id="svg_3" cy="2.86667" cx="2.86667" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" fill="none" stroke-width="4"/>
+  <ellipse stroke="#ffffff" ry="0.6" rx="0.6" id="svg_4" cy="27.13333" cx="2.86667" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" fill="none" stroke-width="4"/>
+  <ellipse stroke="#ffffff" id="svg_5" ry="0.6" rx="0.6" cy="27.13333" cx="27.13333" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" fill="none" stroke-width="4"/>
+  <ellipse stroke="#ffffff" id="svg_6" ry="0.6" rx="0.6" cy="2.86667" cx="27.13333" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" fill="none" stroke-width="4"/>
+  <ellipse stroke="#ffffff" id="svg_7" ry="0.6" rx="0.6" cy="14.13333" cx="27.13333" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" fill="none" stroke-width="4"/>
+  <ellipse stroke="#ffffff" id="svg_8" ry="0.6" rx="0.6" cy="2.86667" cx="15" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" fill="none" stroke-width="4"/>
+  <ellipse stroke="#ffffff" id="svg_9" ry="0.6" rx="0.6" cy="27.13333" cx="15" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" fill="none" stroke-width="4"/>
+  <ellipse stroke="#ffffff" id="svg_10" ry="0.6" rx="0.6" cy="14.13333" cx="2.86667" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" fill="none" stroke-width="4"/>
+ </g>
+</svg>
